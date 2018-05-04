@@ -44,3 +44,12 @@ Point2d& Point2d::operator =(const Point2d& p)
     m_y = p.getY();
 }
 
+bool operator==(Point2d const& p1, Point2d const& p2)
+{
+    return p1.getX() == p2.getX() && p1.getY() == p2.getY()
+}
+
+bool operator!=(Point2d const& p1, Point2d const& p2)
+{
+    return !(p1 == p2);
+}
