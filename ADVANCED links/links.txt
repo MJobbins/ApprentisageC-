@@ -1,5 +1,7 @@
 https://www.geeksforgeeks.org/char-vs-stdstring-vs-char-c/
 
+http://aszt.inf.elte.hu/~gsd/halado_cpp/index.html
+
 Knowledge :
 
 Ajouter virtual à une fonction signifie qu'elle prend 4octets de plus en memoire (un pointeur).
@@ -30,3 +32,6 @@ life = le temps pendant lequel on peut utiliser cette adresse memoire pour stock
 Si on fait une référence 'IR' sur une variable 'I', I a le scope et life, alors que IR n'as que l'IR. Soit, lorsqu'on supprime I, IR pointe sur une case qui ne doit plus être utilisée. DANGEREUX
 
 lors d'un return, ce qui est retourné est une copie. Peut prendre du temps / place si c'est un gros tableau.
+
+Si on utilise du code C dans du C++, il faudrais compiler chacun séparrement. On peut autrement utiliser le mot clé ( extern "C" ).
+
