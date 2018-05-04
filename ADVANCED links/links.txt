@@ -1,0 +1,32 @@
+https://www.geeksforgeeks.org/char-vs-stdstring-vs-char-c/
+
+Knowledge :
+
+Ajouter virtual à une fonction signifie qu'elle prend 4octets de plus en memoire (un pointeur).
+
+Mettre =0 signife que la classe fille doit obligatoirement la redefinir.
+
+Pour debugger des problèmes avec les copies, mettre le code du constructeur par copie en commentaire et passer le constructeur en privé.
+
+Pointeur = même taille qu'un int.
+
+une methode vrtual pure (avec virtual et =0) signife que la classe sera abstraite et aucune instance de celle ci ne sera possible.
+
+Constructeur en 2 parties : Le corps du constructeur sert a affecter les attributs, mais la liste avant celle ci sert d'instanciation.
+On doit donc toujours instancier les attributs avant le corps du constructeur.
+
+Pour rendre une classe abstraite, lorsque aucune methodes n'est pas definie, il faut mettre le destructeur en virtual pure.
+
+Un constructeur virtual pure signifie par definition que la classe est abstraite.
+
+Un destructeur doit toujours être virtual sauf s'il n'auras pas de classes filles. Dans ce cas préciser dans le .h de celui ci que le destructeur n'est pas virtual.
+
+La différence principale entre une référence et un pointeur, c'est qu'une reference ne peut être null, elle reference toujours un objet.
+
+Lors la declaration d'un variable, celle ci se fait vraiment en deux etapes : scope et life.
+scope = en gros l'endroit de la memoire ou celle ci sera stockée.
+life = le temps pendant lequel on peut utiliser cette adresse memoire pour stocker des info. Après cette durée, il est dangereux d'accéder a cette adresse.
+
+Si on fait une référence 'IR' sur une variable 'I', I a le scope et life, alors que IR n'as que l'IR. Soit, lorsqu'on supprime I, IR pointe sur une case qui ne doit plus être utilisée. DANGEREUX
+
+lors d'un return, ce qui est retourné est une copie. Peut prendre du temps / place si c'est un gros tableau.
