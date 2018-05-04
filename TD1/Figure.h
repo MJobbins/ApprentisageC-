@@ -3,6 +3,8 @@
 
 #include <string>
 #include <iostream>
+#include "Point2d"
+#include "Vector2d"
 
 class Figure
 {
