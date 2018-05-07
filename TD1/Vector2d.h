@@ -16,8 +16,8 @@ class Vector2d
 	~Vector2d();
 
 	//Getters et Setters
-	Point2d getP1();
-	Point2d getP2();
+	Point2d getP1() const;
+	Point2d getP2() const;
 
 	void setP1(Point2d const& p);
 	void setP1(int x, int y);
@@ -27,9 +27,9 @@ class Vector2d
 	//Methodes
 
 	//on devrais ici retourner un float pour plus de precisions
-	int length();
-	int normeX();
-	int normeY();
+	int length() const;
+	int normeX() const;
+	int normeY() const;
 
 	
 

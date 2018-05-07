@@ -30,12 +30,12 @@ m_p2(x, y)
 Vector2d::~Vector2d()
 {}
 
-Point2d Vector2d::getP1()
+Point2d Vector2d::getP1() const
 {
     return m_p1;
 }
 
-Point2d Vector2d::getP2()
+Point2d Vector2d::getP2() const
 {
     return m_p2;
 }
@@ -62,17 +62,17 @@ void Vector2d::setP2(int x, int y)
     m_p2.setY(y);
 }
 
-int Vector2d::length()
+int Vector2d::length() const
 {
     return sqrt((pow((m_p1.getX() - m_p2.getX()), 2) + pow((m_p1.getY() - m_p2.getY()), 2)));
 }
 
-int Vector2d::normeX()
+int Vector2d::normeX() const
 {
     return m_p2.getX() - m_p1.getX();
 }
 
-int Vector2d::normeY()
+int Vector2d::normeY() const
 {
     return m_p2.getY() - m_p1.getY();
 }

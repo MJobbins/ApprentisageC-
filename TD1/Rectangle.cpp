@@ -7,19 +7,19 @@
 using namespace std;
 
 Rectangle::Rectangle() :
+Figure("Rectangle"),
 m_longueur(1),
 m_largeur(1),
 m_sommet(0, 0)
 {
-    Figure::Figure("Rectangle");
 }
 
 Rectangle::Rectangle(const Rectangle &rect) :
+Figure("Rectanlge"),
 m_largeur(rect.getLargeur()),
 m_longueur(rect.getLongueur()),
 m_sommet(rect.getSommet())
 {
-    Figure::Figure("Rectangle");
 }
 
 Rectangle::~Rectangle()
@@ -74,8 +74,8 @@ void Rectangle::operator=(Rectangle const &r)
 
 void Rectangle::translate(Vector2d const &vect)
 {
-    Point2d tmp(m_sommet);
-    tmp.setX( tmp.getX() + vect.)
+    m_sommet.setX( m_sommet.getX() + vect.normeX());
+    m_sommet.setY( m_sommet.getY() + vect.normeY());
 }
 
 void Rectangle::scale(int k, Point2d const &O)

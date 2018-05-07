@@ -15,7 +15,7 @@ class Rectangle : public Figure
 	Rectangle();
 	Rectangle(Rectangle const& rect);
 
-	~Rectangle();
+	virtual~Rectangle();
 
 	//Getter et Setters
 	void setSommet(Point2d const& sommet);
@@ -43,7 +43,7 @@ class Rectangle : public Figure
 	/*******************
 	**ATTRIBUTS
 	********************/
-	private	:
+	protected :
 
 	Point2d m_sommet;
 	int m_longueur;
