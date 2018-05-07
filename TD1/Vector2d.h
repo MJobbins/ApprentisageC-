@@ -12,6 +12,7 @@ class Vector2d
 	Vector2d(Point2d const& p1, Point2d const& p2);
 	Vector2d(int p1_x, int p1_y, int p2_x, int p2_y);
 	Vector2d(Vector2d const& vect);
+	Vector2d(int x, int y);
 	~Vector2d();
 
 	//Getters et Setters
@@ -27,6 +28,8 @@ class Vector2d
 
 	//on devrais ici retourner un float pour plus de precisions
 	int length();
+	int normeX();
+	int normeY();
 
 	
 

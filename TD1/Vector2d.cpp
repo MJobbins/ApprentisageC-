@@ -21,6 +21,12 @@ m_p1(vect.m_p1),
 m_p2(vect.m_p2)
 {}
 
+
+Vector2d::Vector2d(int x, int y) :
+m_p1(0, 0),
+m_p2(x, y)
+{}
+
 Vector2d::~Vector2d()
 {}
 
@@ -59,5 +65,15 @@ void Vector2d::setP2(int x, int y)
 int Vector2d::length()
 {
     return sqrt((pow((m_p1.getX() - m_p2.getX()), 2) + pow((m_p1.getY() - m_p2.getY()), 2)));
+}
+
+int Vector2d::normeX()
+{
+    return m_p2.getX() - m_p1.getX();
+}
+
+int Vector2d::normeY()
+{
+    return m_p2.getY() - m_p1.getY();
 }
 
