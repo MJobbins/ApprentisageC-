@@ -1,4 +1,8 @@
 #include "Figure.h"
+#include <string>
+#include <iostream>
+#include "Point2d.h"
+#include "Vector2d.h"
 
 using namespace std;
 
@@ -10,7 +14,7 @@ Figure::Figure(string nom) : DEFAULT_NOM("Default")
 		m_nom = nom;
 }
 
-Figure::Figure(Figure const& f) : m_nom(f.nom), DEFAULT_NOM("Default")
+Figure::Figure(Figure const& f) : m_nom(f.m_nom), DEFAULT_NOM("Default")
 {
 	m_nom = f.m_nom;
 }

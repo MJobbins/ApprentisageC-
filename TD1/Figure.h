@@ -3,10 +3,11 @@
 
 #include <string>
 #include <iostream>
-#include "Point2d"
-#include "Vector2d"
+#include "Point2d.h"
+#include "Vector2d.h"
 
-class Figure
+
+    class Figure
 {
 
 	/*******************

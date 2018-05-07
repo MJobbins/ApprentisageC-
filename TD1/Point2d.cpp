@@ -1,7 +1,7 @@
 #include "Point2d.h"
 #include <math.h>
 
-const Point2d::ORIGIN (0, 0); 
+const Point2d Point2d::ORIGIN (0, 0);
 
 Point2d::Point2d(int x, int y) : m_x(x), m_y(y)
 {}
@@ -12,12 +12,12 @@ Point2d::Point2d(const Point2d& p) : m_x(p.getX()), m_y(p.getY())
 Point2d::~Point2d()
 {}
 
-Point2d Point2d::getX() const
+int Point2d::getX() const
 {
     return m_x;
 }
 
-Point2d Point2d::getY() const
+int Point2d::getY() const
 {
     return m_y;
 }

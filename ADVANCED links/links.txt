@@ -2,6 +2,8 @@ https://www.geeksforgeeks.org/char-vs-stdstring-vs-char-c/
 
 http://aszt.inf.elte.hu/~gsd/halado_cpp/index.html
 
+https://cpp.developpez.com/cours/cppavance/
+
 Knowledge :
 
 Ajouter virtual à une fonction signifie qu'elle prend 4octets de plus en memoire (un pointeur).
