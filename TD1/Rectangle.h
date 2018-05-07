@@ -29,7 +29,7 @@ class Rectangle : public Figure
 	//Methodes abstraites de la mère
 	virtual void afficher() const;
 
-	virtual void operator=(Figure const& f);
+	virtual void operator=(Rectangle const& r);
 
 	virtual void translate(Vector2d const& vect);
 
@@ -45,7 +45,7 @@ class Rectangle : public Figure
 	********************/
 	private	:
 
-	point2d m_sommet;
+	Point2d m_sommet;
 	int m_longueur;
 	int m_largeur;
 

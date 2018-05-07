@@ -1,12 +1,12 @@
 #include "Figure.h"
-#include <string>
+/*#include <string>
 #include <iostream>
 #include "Point2d.h"
 #include "Vector2d.h"
-
+*/
 using namespace std;
 
-Figure::Figure(string nom) : DEFAULT_NOM("Default")
+Figure::Figure(string nom = DEFAULT_NOM) : DEFAULT_NOM("Default")
 {
 	if(nom.size() == 0)
 		m_nom = DEFAULT_NOM;

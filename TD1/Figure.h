@@ -16,7 +16,7 @@
 	public :
 
 	//Constructeurs
-	Figure(std::string nom);
+	Figure(std::string nom = DEFAULT_NOM);
 	Figure(Figure const& f);
 
 	//Destructeur
